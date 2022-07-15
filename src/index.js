@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import './style.css';
-const Task = require('../modules/todotask.js')
+const Task = require('./modules/todotask.js')
 
 const input = document.querySelector('.add-tasks');
 const clear = document.querySelector('btn-clear-all');
