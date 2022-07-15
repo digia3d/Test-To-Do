@@ -1,8 +1,10 @@
-const saveToLocalStorage = (key, value) => (
-  localStorage.setItem(key, JSON.stringify(value))
+const saveToLocalStorage = (value) => (
+  localStorage.setItem('tasks', JSON.stringify(value))
 );
 
-const getFromLocalStorage = (key) =>(localStorage.getItem(key))?JSON.parse(localStorage.getItem(key)):[];
+function getFromLocalStorage() {
+  return window.localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : [];
+}
 
 module.exports = {
   saveToLocalStorage,

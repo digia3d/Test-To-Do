@@ -12,4 +12,4 @@ const icon = (name) => {
   return i;
 };
 
-module.exports = {input, icon};
+module.exports = { input, icon };

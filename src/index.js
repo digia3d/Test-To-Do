@@ -1,23 +1,25 @@
 import _ from 'lodash';
 import './style.css';
-const Task = require('./modules/todotask.js')
+
+const Task = require('./modules/todotask.js');
 
 const input = document.querySelector('.add-tasks');
 const clear = document.querySelector('btn-clear-all');
 
-const Task = new Task();
+const task = new Task();
 
 input.addEventListener('keypress', (e) => {
   const data = input.value;
   if (e.key === 'Enter') {
-    Task.add(data);
+    task.add(data);
+    task.refresh();
     input.value = '';
   }
 });
 
 clear.addEventListener('click', (e) => {
   e.preventDefault();
-  Task.clearCompleted();
+  task.clearCompleted();
 });
 
-Task.showTasks();
+task.showTasks();
