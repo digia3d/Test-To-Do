@@ -10,7 +10,15 @@
 - Major languages
 > Html amd JavaScript
 
+## Getting Started
 
+To start with this project kindly follow this steps:
+  - Clone the project from github
+  - run a code on a text editor
+  - install dependencies with npm install
+  - run the project with npm start
+  - run test cases with npm test
+  
 ## Authors
 
 👤 **Sajjad Rajaee**
