@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', 'Lato', 'Roboto', sans-serif;
+  background-color: rgb(196, 196, 234);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 70vh;
+  background-color: rgb(6, 6, 49);
+  box-shadow: 1px 1px 10px rgb(26, 25, 25);
+}
+
+.mein {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  vertical-align: middle;
+  padding: 20px;
+  font-size: large;
+}
+
+.add-tasks {
+  width: 100%;
+  padding: 20px;
+  font-style: italic;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+h1 {
+  color: aliceblue;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
