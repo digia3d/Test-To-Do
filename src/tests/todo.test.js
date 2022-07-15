@@ -10,5 +10,8 @@ describe('add list to task in localStorage', () => {
     task.add(descriptions[1]);
     expect(JSON.parse(window.localStorage.getItem('tasks')).length).toEqual(2);
   });
-
+  test('remove  from localStorage', () => {
+    task.delete(descriptions[0], getFromLocalStorage());
+    expect(JSON.parse(window.localStorage.getItem('tasks')).length).toEqual(1);
+  });
 });
