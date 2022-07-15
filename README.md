@@ -2,7 +2,7 @@
 
 # Project Name: TodoList Testing
 
-> Description the project: With the design of this project the user can add books to the shelve (object array) by clicking the add button and remove the books when the remove button is clicked.
+> Description the project: With the design of this project the user can add todo list and can set it as completed or not. it's easy to use and simple ;)
 
 
 ## Built With
