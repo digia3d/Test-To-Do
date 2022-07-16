@@ -43,4 +43,10 @@ describe('When adding and removing a task you', () => {
     expect(toDoListData()[0].completed).toBeTruthy();
     expect(toDoListData()).toHaveLength(1);
   });
+  test('clear all completed items', () => {
+    addTask(data[3]);
+    expect(toDoListData()).toHaveLength(2);
+    clearCompletedTodos();
+    expect(toDoListData()).toHaveLength(1);
+  });
 });
